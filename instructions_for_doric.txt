@@ -1,0 +1,15 @@
+Format for doric to csv conversion
+
+[1] Add CNMF, Event Detection Folder to the Matlab path before starting
+
+[2] Process doric files through readdori.m into Matlab
+
+[3] Process Matlab files using doric_analysis.m, if the channel pathway remains absolute for the entirety of the files, use the automated however if otherwise make sure to check singularly in making sure Y = Data_Acquired(X).Data(Y).Data; is the right channel
+
+[4] event_fiber_photometry.m processes event related fiber photometric signals
+
+[5] export_csv.m to convert into csv for pipeline processing
+
+
+
+
