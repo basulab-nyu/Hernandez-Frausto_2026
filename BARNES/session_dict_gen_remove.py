@@ -53,11 +53,11 @@ def build_session_dict(photometry_dir, behavior_dir):
     return sessions
 
 
-build_session_dict('')
+build_session_dict('') # add the path where you want the session_dict to be
 if __name__ == "__main__":
     # Test block to verify it works standalone
-    photometry_dir = '/Volumes/basulab/basulabspace/MHF/FIBER_PHOTOMETRY/2024/042024/BARNES/CNMF-ANALYSIS/MHF200CAMKIIRGECO'
-    behavior_dir = '/Volumes/basulab/basulabspace/TS/Data/Barnes/barnes_behavior/200'
+    photometry_dir = 'insert_dir_here'
+    behavior_dir = 'insert_dir_here'
     found_sessions = build_session_dict(photometry_dir, behavior_dir)
     print(f"Found {len(found_sessions)} valid sessions.")
     print("Sample session entry:", found_sessions[0] if found_sessions else "No sessions found.")
